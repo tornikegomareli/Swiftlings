@@ -1,9 +1,9 @@
 import Testing
 @testable import Exercises
 
-@Test("Variables and Constants Demo")
-func testVariablesAndConstants() {
-  variablesAndConstantsDemo()
+@Test("Type inference tests")
+func testTypeInferenceVaraibles() {
+  typeInferenceDemo()
   #expect(true, "Exercise compiles and runs successfully!")
 }
 
