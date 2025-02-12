@@ -24,6 +24,6 @@ public func variablesAndConstantsDemo() {
 
     // TODO: Step 4 - Reassign 'currentVersion' to 5.8
     // OPTIONAL: Print both to verify
-    //return "Language: \(languageName), version: \(currentVersion)"
+    // print("Language: \(languageName), version: \(currentVersion)")
 }
 
