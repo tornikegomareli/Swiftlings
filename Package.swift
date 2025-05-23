@@ -12,10 +12,16 @@ let package = Package(
     .library(
       name: "Swiftlings",
       targets: ["Exercises"]),
+    .executable(
+      name: "swiftlings",
+      targets: ["SwiftlingsCLI"]),
   ],
   targets: [
     .target(
       name: "Exercises"),
+    .executableTarget(
+      name: "SwiftlingsCLI",
+      dependencies: []),
     .testTarget(
       name: "TestsForExercises",
       dependencies: ["Exercises"],
