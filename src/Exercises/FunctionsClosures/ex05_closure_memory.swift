@@ -30,7 +30,7 @@ public class NetworkManager {
 }
 
 // TODO: Use unowned correctly
-public class Person {
+public class ResidentPerson {
     let name: String
     var apartment: Apartment?
     
@@ -45,7 +45,7 @@ public class Person {
 
 public class Apartment {
     let unit: String
-    var tenant: Person?
+    var tenant: ResidentPerson?
     
     public init(unit: String) {
         self.unit = unit
@@ -103,7 +103,7 @@ public func demonstrateValueCapture() {
 }
 
 // TODO: Fix multiple closure capture
-public class ViewController {
+public class ButtonController {
     var buttonTitle = "Tap me"
     var tapCount = 0
     
@@ -139,7 +139,7 @@ public class ViewController {
     }
     
     deinit {
-        print("ViewController deallocated")
+        print("ButtonController deallocated")
     }
 }
 
@@ -204,7 +204,7 @@ public func runClosureMemory() {
     
     // Test Person/Apartment
     autoreleasepool {
-        let john = Person(name: "John")
+        let john = ResidentPerson(name: "John")
         let unit4A = Apartment(unit: "4A")
         
         john.apartment = unit4A
@@ -217,9 +217,9 @@ public func runClosureMemory() {
     // Test value capture
     demonstrateValueCapture()
     
-    // Test ViewController
+    // Test ButtonController
     autoreleasepool {
-        let vc = ViewController()
+        let vc = ButtonController()
         vc.setupButton()
         // VC should be deallocated after this
     }

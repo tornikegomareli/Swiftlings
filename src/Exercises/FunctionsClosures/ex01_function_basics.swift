@@ -4,9 +4,9 @@
 import Foundation
 
 // TODO: Fix the function syntax
-public func greet name: String {
-    print("Hello, \(name)!")
-}
+//public func greet name: String {
+//    print("Hello, \(name)!")
+//}
 
 // TODO: Add parameter labels
 public func calculateArea(width: Double, height: Double) -> Double {

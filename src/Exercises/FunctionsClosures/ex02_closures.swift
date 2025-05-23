@@ -100,7 +100,7 @@ public func logIfTrue(_ condition: Bool, _ message: String) {
 }
 
 // TODO: Create a complex closure example
-public struct Student {
+public struct CourseStudent {
     let name: String
     let grade: Int
     let subjects: [String]
