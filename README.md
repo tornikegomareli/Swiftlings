@@ -1,6 +1,6 @@
 # Swiftlings
 
-A collection of small exercises to get you used to reading and writing Swift code. This project is inspired by the [Rustlings](https://github.com/rust-lang/rustlings) project.
+A collection of exercises to get you used to reading, writing and understanding Swift code. This project is inspired by the [Rustlings](https://github.com/rust-lang/rustlings) project.
 
 ## Getting Started
 
@@ -136,13 +136,7 @@ These testing approaches allow instructors to confirm that tests are properly st
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Any kind of Contributions are welcome! Please feel free to submit a Pull Request or Issues or better execises!
 
 ## License
-
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Inspired by the [Rustlings](https://github.com/rust-lang/rustlings) project
-- Thanks to everyone who has contributed to this project
