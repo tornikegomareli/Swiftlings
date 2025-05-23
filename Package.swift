@@ -18,7 +18,10 @@ let package = Package(
       name: "Exercises"),
     .testTarget(
       name: "TestsForExercises",
-      dependencies: ["Exercises"]
+      dependencies: ["Exercises"],
+      swiftSettings: [
+        .define("TESTING", .when(configuration: .debug))
+      ]
     ),
   ]
 )
