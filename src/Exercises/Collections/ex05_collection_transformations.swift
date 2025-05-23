@@ -67,13 +67,13 @@ public func zipAndCombine<T, U>(_ array1: [T], _ array2: [U],
 }
 
 // TODO: Create a pipeline for data processing
-struct Person {
+public struct CollectionPerson {
     let name: String
     let age: Int
     let city: String
 }
 
-public func processPersonData(_ people: [Person]) -> [String: [String]] {
+public func processPersonData(_ people: [CollectionPerson]) -> [String: [String]] {
     // Group people by city, but only include adults (age >= 18)
     // Return dictionary: city -> [names]
     // Sort names alphabetically within each city
@@ -117,11 +117,11 @@ public func runTransformationExercises() {
     // print("Combined: \(combined)")
     
     // let people = [
-    //     Person(name: "Alice", age: 25, city: "New York"),
-    //     Person(name: "Bob", age: 17, city: "London"),
-    //     Person(name: "Charlie", age: 30, city: "New York"),
-    //     Person(name: "David", age: 22, city: "London"),
-    //     Person(name: "Eve", age: 16, city: "Paris")
+    //     CollectionPerson(name: "Alice", age: 25, city: "New York"),
+    //     CollectionPerson(name: "Bob", age: 17, city: "London"),
+    //     CollectionPerson(name: "Charlie", age: 30, city: "New York"),
+    //     CollectionPerson(name: "David", age: 22, city: "London"),
+    //     CollectionPerson(name: "Eve", age: 16, city: "Paris")
     // ]
     // print("Grouped adults: \(processPersonData(people))")
 }

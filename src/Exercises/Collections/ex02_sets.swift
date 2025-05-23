@@ -41,14 +41,14 @@ public func setOperations() {
 // TODO: Fix the type error
 public func setTypes() {
     // This won't compile! Sets need hashable elements
-    struct Person {
+    struct SetPerson: Hashable {
         let name: String
         let age: Int
     }
     
-    let people: Set<Person> = [
-        Person(name: "Alice", age: 30),
-        Person(name: "Bob", age: 25)
+    let people: Set<SetPerson> = [
+        SetPerson(name: "Alice", age: 30),
+        SetPerson(name: "Bob", age: 25)
     ]
     
     print("People in set: \(people.count)")
