@@ -24,6 +24,32 @@ cd swiftlings
 
 Swiftlings is a collection of Swift exercises that guide you through learning the Swift programming language. Each exercise is contained in a separate Swift file and includes TODO comments that indicate what you need to do to complete the exercise.
 
+### Using the Command-Line Tool
+
+Swiftlings comes with a command-line tool to help you work with exercises:
+
+```bash
+# Run the CLI tool with help command
+swift run swiftlings help
+
+# List all categories
+swift run swiftlings list
+
+# List exercises in a specific category
+swift run swiftlings list BasicSyntax
+
+# Run tests for a specific exercise
+swift run swiftlings run BasicSyntax/ex01_variables_constants
+
+# Watch for changes in an exercise file and run tests automatically
+swift run swiftlings watch BasicSyntax/ex01_variables_constants
+
+# Verify all exercises in a category
+swift run swiftlings verify BasicSyntax
+```
+
+The command-line tool provides a more integrated experience for working with Swiftlings exercises.
+
 ### Project Structure
 
 - `src/Exercises/`: Contains the exercise implementations organized by topic
@@ -55,7 +81,7 @@ Swiftlings is a collection of Swift exercises that guide you through learning th
 
 ## Testing Your Solutions
 
-Swiftlings provides four different testing approaches to help with different aspects of development:
+Swiftlings provides five different testing approaches to help with different aspects of development:
 
 ### 1. Run Tests for a Category
 
@@ -118,6 +144,21 @@ You can test individual Swift files in isolation:
 
 # Show verbose output
 ./test_specific.sh --file path/to/file.swift --verbose
+```
+
+### 5. Command-Line Tool
+
+The most user-friendly way to test your solutions is using the built-in command-line tool:
+
+```bash
+# Run tests for a specific exercise
+swift run swiftlings run BasicSyntax/ex01_variables_constants
+
+# Watch for changes and automatically test
+swift run swiftlings watch BasicSyntax/ex01_variables_constants
+
+# Verify all exercises in a category
+swift run swiftlings verify BasicSyntax
 ```
 
 These testing approaches allow instructors to confirm that tests are properly structured and solutions work correctly, while students can use them to check their progress as they complete exercises.
